@@ -1,0 +1,177 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #223666;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 内容样式 */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery a:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* 作品展示区域 */
+.gallery {
+    display: grid; /* 使用网格布局 */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 自动适应屏幕宽度 */
+    gap: 20px; /* 图片间距 */
+    justify-items: center; /* 居中对齐 */
+    margin-top: 20px;
+}
+
+/* 缩略图样式 */
+.gallery img {
+    width: 200px; /* 固定缩略图宽度 */
+    height: auto; /* 自动调整高度 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    transition: transform 0.3s ease; /* 鼠标悬停放大效果 */
+}
+
+/* 鼠标悬停时放大 */
+.gallery a:hover img {
+    transform: scale(1.1);
+}
+
+/* 标题样式 */
+#about h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* 外部链接列表样式 */
+/* 外部链接列表样式 */
+.external-links {
+    list-style: none; /* 去掉列表点 */
+    padding: 0;
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 居中对齐 */
+    gap: 20px; /* 设置按钮之间的间距 */
+    margin: 20px 0; /* 顶部和底部的空隙 */
+}
+
+/* 列表项样式 */
+.external-links li {
+    margin: 0; /* 去掉默认外边距 */
+}
+
+/* 按钮样式 */
+.external-links a {
+    text-decoration: none; /* 去掉下划线 */
+    font-size: 18px;
+    color: #333; /* 按钮文字颜色 */
+    background-color: #f4f4f9; /* 按钮背景色 */
+    padding: 10px 20px; /* 按钮内边距 */
+    border-radius: 8px; /* 按钮圆角 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影 */
+    transition: all 0.3s ease; /* 鼠标悬停效果 */
+}
+
+/* 鼠标悬停时样式 */
+.external-links a:hover {
+    background-color: #223666; /* 背景变深 */
+    color: white; /* 文字变白 */
+    transform: scale(1.05); /* 略微放大 */
+}
+
+
+.external-links a {
+    text-decoration: none; /* 去掉下划线 */
+    font-size: 18px;
+    color: #223666; /* 链接颜色 */
+    background-color: #f4f4f9; /* 背景色 */
+    padding: 10px 20px; /* 内边距，像按钮一样 */
+    border-radius: 8px; /* 圆角 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    transition: all 0.3s ease; /* 悬停效果 */
+}
+
+/* 外部链接列表样式（通用样式） */
+.external-links {
+    list-style: none; /* 去掉列表点 */
+    padding: 0;
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 居中对齐 */
+    gap: 20px; /* 设置按钮之间的间距 */
+    margin: 20px 0; /* 顶部和底部的空隙 */
+}
+
+.external-links li {
+    margin: 0; /* 去掉默认外边距 */
+}
+
+/* 按钮样式（通用样式） */
+.external-links a {
+    text-decoration: none; /* 去掉下划线 */
+    font-size: 18px;
+    color: #333; /* 按钮文字颜色 */
+    background-color: #f4f4f9; /* 按钮背景色 */
+    padding: 10px 20px; /* 按钮内边距 */
+    border-radius: 8px; /* 按钮圆角 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影 */
+    transition: all 0.3s ease; /* 鼠标悬停效果 */
+}
+
+/* 鼠标悬停时样式 */
+.external-links a:hover {
+    background-color: #223666; /* 背景变深 */
+    color: white; /* 文字变白 */
+    transform: scale(1.05); /* 略微放大 */
+}
+

@@ -175,3 +175,27 @@ footer {
     transform: scale(1.05); /* 略微放大 */
 }
 
+/* 确保图片不会超出屏幕宽度 */
+img {
+    max-width: 100%; /* 图片宽度不超过父元素 */
+    height: auto; /* 保持图片比例 */
+    display: block; /* 去掉图片下方的空隙 */
+    margin: 0 auto; /* 居中对齐 */
+}
+
+/* 针对手机屏幕的媒体查询 */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 24px; /* 缩小标题文字 */
+        text-align: center; /* 居中对齐 */
+    }
+
+    .external-links a {
+        font-size: 14px; /* 缩小按钮字体 */
+        padding: 8px 15px; /* 减小按钮间距 */
+    }
+
+    .external-links {
+        gap: 8px; /* 减小按钮之间的间距 */
+    }
+}
